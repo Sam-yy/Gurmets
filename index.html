@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Kitchen Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="site-title">World Kitchen Recipes</h1>
+    <nav>
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('jp')">日本語</button>
+      <button onclick="setLanguage('my')">မြန်မာ</button>
+    </nav>
+  </header>
+
+  <div id="filter-buttons">
+    <button onclick="filterByCountry('all')" id="btn-all">All</button>
+    <button onclick="filterByCountry('Myanmar')" id="btn-myanmar">🇲🇲 Myanmar</button>
+    <button onclick="filterByCountry('Japan')" id="btn-japan">🇯🇵 Japan</button>
+    <button onclick="filterByCountry('Italy')" id="btn-italy">🇮🇹 Italy</button>
+  </div>
+
+  <main id="recipe-list"></main>
+   <footer>
+    <p>Created by Pyae Phyo Aung | © 2025</p>
+  </footer>
+  
+  <script src="text.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
+

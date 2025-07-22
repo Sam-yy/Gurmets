@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #ffd700;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 10px; /* space between buttons */
+  flex-wrap: wrap; /* wrap if screen is small */
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background: #ffec70;
+}
+
+#filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#filter-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+.recipe-card {
+  background: white;
+  width: 600px; /* fixed width works best in grid */
+  margin: 10px; /* uniform margin for spacing */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+  text-align: left;
+  flex: 1 1 300px; /* responsive sizing */
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-card h2 {
+  margin-top: 0;
+}
+
+.recipe-card p {
+  margin: 8px 0;
+}
+#recipe-list {
+  display: flex;
+  flex-wrap: wrap; /* wrap to next line if too many */
+  justify-content: center; /* center cards horizontally */
+  gap: 20px; /* space between cards */
+}
+@media (max-width: 600px) {
+  .recipe-card {
+    width: 90%;
+  }
+}
