@@ -5,6 +5,8 @@ const texts = {
     btnMyanmar: "🇲🇲 Myanmar",
     btnJapan: "🇯🇵 Japan",
     btnItaly: "🇮🇹 Italy",
+    btnFrance: "🇫🇷 France",
+    btnIndia: "🇮🇳 India",
     recipes: [
       {
         country: "Myanmar",
