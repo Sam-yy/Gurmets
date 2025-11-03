@@ -1,4 +1,3 @@
-
 const texts = {
   en: {
     siteTitle: "World Kitchen Recipes",
@@ -10,86 +9,125 @@ const texts = {
     btnIndia: "🇮🇳 India",
     recipes: [
       {
+        id: "mohinga",
         country: "Myanmar",
         name: "Mohinga",
         image: "mohinga.jpg",
-        ingredients: "Rice noodles, fish broth, banana stem...",
-        steps: "1. Prepare broth. 2. Boil noodles. 3. Combine and serve."
+        introduction: "Mohinga is Myanmar's national dish – a comforting fish noodle soup often enjoyed for breakfast. Its savory broth, flavored with lemongrass and banana stem, brings a taste of home to every Burmese household.",
+        ingredients: "Rice noodles, fish broth, banana stem, lemongrass, garlic, onion, chickpea powder, fish sauce, boiled egg.",
+        steps: [
+          "Prepare the fish broth with lemongrass and banana stem.",
+          "Boil the rice noodles until soft.",
+          "Pour the broth over the noodles and garnish with egg and coriander.",
+          "Serve hot with crispy fritters or chili flakes."
+        ]
       },
       {
+        id: "braised-pork",
         country: "Myanmar",
         name: "Secret Braised Pork",
         image: "Pork.jpg",
-        ingredients: "pork belly, minced garlic, soy sauce, water, sugar, salt",
+        introduction: "A traditional Burmese-style braised pork dish with rich, deep flavors. The meat is slowly cooked until tender in a sweet and savory sauce made from soy, garlic, and sugar.",
+        ingredients: "Pork belly, minced garlic, soy sauce, water, sugar, salt.",
         steps: [
-       " Wash the pork belly, remove the hair and cut into small pieces. Blanch in boiling water, then rinse with cold water until completely cooled.",
-       " Boil water again and blanch the pork belly a second time. Cool again.",
-       " In a frying pan, sauté garlic in a little oil until fragrant. Add pork and stir-fry until lightly browned. Add light soy sauce, dark soy sauce, sugar, and water. Simmer for 20–30 minutes. Let it cool, then add items like eggs or potatoes. Stew for another 20–30 minutes."
-    ]
-     },
-      {
-        country: "Japan",
-        name: "Tempura",
-        image:"Tempura.jpg",
-        ingredients:"Seafood – prawn (shrimp), whiting, squid, scallop, conger eel,Vegetables – pumpkin, carrot, eggplant, sweet potato, burdock, lotus root, shiitake mushrooms, shiso (Japanese perilla) leaves",
-        steps:[
-            "Add the egg and cold water to a bowl or measuring cup, and mix well until there is no cluster of egg white.Add two thirds each of the egg mixture and the flour to a separate bowl, and gently mix by drawing the number 8 several times, leaving powdery lumps of flour. Keep the remaining egg mixture and flour in the fridge, as they will be added late",
-            "Fill a deep frypan or pot with oil up to a minimum depth of 3cm (1¼”) and heat the oil to 170C (335F). Drop a tiny amount of batter onto the surface, and if it hardly touches the bottom and returns to the surface, it is at the right temperature.Cook the same ingredients together unless you are serving one person at a time. The order can vary, but prawns should be cooked last. Cook in batches but do not cover more than 30-40% of the surface area of the oil with the tempura. Ingredients should be patted dry before dipping in the batter.",
-            "Eggplants – dip in the batter to coat the entire eggplant piece, then drop it gently into the oil one by one. Cook for about 45-60 seconds until the eggplant tempura comes to the surface and you can see large bubbles around it. Flip it over and cook for a further 45 seconds or so until the eggplant becomes light when lifted and very lightly browned, then transfer to a wire rack.Enoki mushrooms – hold at the root with a yaki nori strip and dip the enoki in the batter, without letting go so that the yaki nori strip is not coated. Drop it gently into the oil and cook for 10-20 seconds. Flip it over and cook for few seconds. Transfer to a wire rack.Shiso leaves – hold the end of the stem and dip only the back side of the leaf into the batter, then drop the whole leaf into the oil, making sure that the battered side is facing the bottom of the pan. Cook for 5-10 seconds and transfer to a wire rack.Carrots – add all the carrot sticks to the batter. Take about a quarter of them and place on a flat wooden spatula, then slide them into the oil while holding them together. Cook for about 60 seconds until the carrot tempura comes up to the surface and you can see large bubbles around it. Flip it over and cook for a further 45-60 seconds, then transfer to a wire rack.",
-            "Add remaining egg mixture and flour to the batter and gently mix just like the first time. Try not to mix with the batter left at the bottom of the bowl too much as they are now glutinous.Increase the temperature of the oil to 180C (350F). At this temperature, when you drop a tiny amount of batter it will surface straight away.Hold a prawn by the tail and dip it into the batter, leaving the tail uncoated. Drop it gently into the oil and cook for about 60 seconds, until it comes to the surface and you can see large bubbles around it. Flip it over and cook for a further 45-60 seconds, then transfer to a wire rack.",
-            "Place one piece each of eggplant, enoki mushroom and carrot tempura onto the plate. Place three prawns tail-side up, then a shiso tempura. Repeat for the other three servings.Take a quarter of daikon per serving and gently squeeze out any water, then place it to the side of the tempura. Add a quarter of the ginger on top of the daikon.Serve immediately with dipping sauce in a small bowl."
+          "Wash and cut pork belly into small pieces. Blanch in boiling water, then rinse with cold water.",
+          "Sauté garlic in oil until fragrant. Add pork and stir-fry until slightly browned.",
+          "Add soy sauces, sugar, and water. Simmer gently for 30–40 minutes.",
+          "Add boiled eggs or potatoes and cook for another 20 minutes."
         ]
       },
-     {
+      {
+        id: "tempura",
+        country: "Japan",
+        name: "Tempura",
+        image: "Tempura.jpg",
+        introduction: "Tempura is a beloved Japanese dish where seafood and vegetables are coated in a light batter and deep-fried to crispy perfection. It's a perfect balance of crunch and delicacy.",
+        ingredients: "Shrimp, squid, pumpkin, eggplant, carrot, sweet potato, flour, egg, cold water, oil.",
+        steps: [
+          "Mix egg and cold water in a bowl, then add flour lightly without overmixing.",
+          "Heat oil to 170°C (335°F). Dip ingredients in the batter and fry until golden.",
+          "Drain on a wire rack to keep crisp.",
+          "Serve with tentsuyu dipping sauce and grated daikon."
+        ]
+      },
+      {
+        id: "sushi",
         country: "Japan",
         name: "Sushi",
         image: "sushi.jpg",
-        ingredients: "Rice, nori, raw fish, vinegar...",
-        steps: "1. Cook rice. 2. Add vinegar. 3. Roll with fish."
+        introduction: "Sushi is Japan’s most iconic dish — vinegared rice rolled with fresh fish and seaweed, symbolizing balance and artistry in every bite.",
+        ingredients: "Sushi rice, nori seaweed, fresh fish, rice vinegar, sugar, salt.",
+        steps: [
+          "Cook rice and season with rice vinegar, sugar, and salt.",
+          "Lay nori on a bamboo mat and spread rice evenly.",
+          "Add fish and roll tightly.",
+          "Slice and serve with soy sauce, wasabi, and pickled ginger."
+        ]
       },
       {
+        id: "pizza-margherita",
         country: "Italy",
         name: "Pizza Margherita",
         image: "pizza.jpg",
-        ingredients: "Flour, tomato, cheese, basil...",
-        steps: "1. Make dough. 2. Add sauce. 3. Bake in oven."
+        introduction: "A symbol of Italian simplicity and flavor, Pizza Margherita combines fresh tomato sauce, mozzarella cheese, and basil for a timeless favorite loved around the world.",
+        ingredients: "Flour, tomato sauce, mozzarella cheese, basil leaves, olive oil, salt.",
+        steps: [
+          "Make pizza dough and let it rise for 1 hour.",
+          "Spread tomato sauce evenly on the dough.",
+          "Add mozzarella and basil leaves on top.",
+          "Bake in the oven at 220°C (428°F) for 10–12 minutes."
+        ]
       },
-       {
+      {
+        id: "ratatouille",
         country: "France",
         name: "Ratatouille",
         image: "ratatouille.jpg",
-        ingredients: "1 zucchini thinly sliced,1 yellow squash thinly sliced, 1 brinjal / eggplant thinly sliced, 1 red pepper thinly sliced into semi circles, 1 jar 400g of your favourite pasta sauce (I used a roasted red pepper sauce), 3 tbsp extra virgin olive oil, 2-3 cloves garlic minced,4 springs thyme leaves removed, 2 tbsp chopped basil leaves, Salt and pepper to taste, Fresh basil to garnish",
-        steps: ["1. Preheat oven to ,190C.",
-                "2. Mix olive oil, thyme, basil, and garlic together.",
-                "3. Coat the bottom of your ,10 inch cast iron skillet with pasta sauce.",
-                "4. Lay out thinly sliced vegetables in alternate patterns.",
-                "5. Season with salt and pepper.",
-                "6. Spread olive oil mixture on top of vegetable.",
-                "7. Cover skillet with foil.",
-                "8. Bake for 35-40 minutes until sauce is bubbly and vegetable is soft.",
-                "9. Garnish with fresh basil before serving.",
-                "Note-  Use a mandoline slicer to get even thin slices of vegetables.Use a casserole in place of a cast iron skillet."
+        introduction: "Ratatouille is a colorful French Provençal vegetable stew, celebrated for its rich, rustic flavors and beautiful presentation of layered vegetables.",
+        ingredients: "Zucchini, eggplant, bell pepper, tomato sauce, olive oil, garlic, thyme, basil, salt, pepper.",
+        steps: [
+          "Preheat oven to 190°C.",
+          "Mix olive oil, thyme, basil, and garlic together.",
+          "Spread tomato sauce in the base of a baking dish.",
+          "Layer sliced vegetables neatly in a circle.",
+          "Season and brush with olive oil mixture.",
+          "Cover with foil and bake for 40 minutes.",
+          "Garnish with fresh basil before serving."
         ]
-      }
-      ,
-       {
+      },
+      {
+        id: "grilled-chicken",
         country: "American",
-        name: "Grilled whole chicken",
+        name: "Grilled Whole Chicken",
         image: "chicken.jpg",
-        ingredients: "Flour, tomato, cheese, basil...",
-        steps: "1. Make dough. 2. Add sauce. 3. Bake in oven."
-      }
-      ,
-        {
+        introduction: "Sink your fork into this juicy, smoky grilled whole chicken — a classic American favorite. Marinated with herbs and spices, it’s flame-kissed to golden perfection, perfect for family gatherings.",
+        ingredients: "Whole chicken, olive oil, garlic, rosemary, salt, pepper, lemon juice.",
+        steps: [
+          "Clean and pat dry the chicken.",
+          "Mix olive oil, garlic, rosemary, salt, pepper, and lemon juice for the marinade.",
+          "Coat the chicken evenly and refrigerate for 2 hours.",
+          "Grill over medium heat until cooked through and golden brown.",
+          "Let rest for 10 minutes before serving."
+        ]
+      },
+      {
+        id: "biryani",
         country: "Indian",
         name: "Biryani",
         image: "Biryani.jpg",
-        ingredients: "Flour, tomato, cheese, basil...",
-        steps: "1. Make dough. 2. Add sauce. 3. Bake in oven."
+        introduction: "Biryani is a flavorful Indian rice dish made with layers of fragrant rice, spiced meat, and caramelized onions — a dish that celebrates warmth and tradition.",
+        ingredients: "Basmati rice, chicken, onion, garlic, ginger, yogurt, spices, saffron, ghee.",
+        steps: [
+          "Marinate chicken with yogurt, spices, and salt for 30 minutes.",
+          "Fry onions until golden and add marinated chicken.",
+          "Add soaked rice and enough water or broth.",
+          "Cover and cook on low heat until rice is fluffy.",
+          "Garnish with fried onions and coriander before serving."
+        ]
       }
-      
     ]
   },
+
   jp: {
     siteTitle: "世界の料理レシピ",
     btnAll: "全部",
@@ -98,28 +136,50 @@ const texts = {
     btnItaly: "🇮🇹 イタリア",
     recipes: [
       {
-        country: "Myanmar",
+        id: "mohinga",
+        country: "ミャンマー",
         name: "モヒンガー",
         image: "mohinga.jpg",
-        ingredients: "米の麺、魚のスープ、バナナの茎...",
-        steps: "1. スープを作る。2. 麺を茹でる。3. 混ぜて提供。"
+        introduction: "ミャンマーの国民食、モヒンガーは魚とレモングラスの香りが特徴の温かいスープ麺料理です。",
+        ingredients: "米の麺、魚のスープ、レモングラス、バナナの茎、にんにく、たまねぎ。",
+        steps: [
+          "スープを作る。",
+          "麺を茹でる。",
+          "スープを注ぎ、ゆで卵を添える。",
+          "熱いうちに提供。"
+        ]
       },
       {
-        country: "Japan",
+        id: "sushi",
+        country: "日本",
         name: "寿司",
         image: "sushi.jpg",
-        ingredients: "米、海苔、生魚、酢...",
-        steps: "1. 米を炊く。2. 酢を加える。3. 魚で巻く。"
+        introduction: "日本を代表する料理の一つである寿司は、酢飯と新鮮な魚を使い、美しさと味を楽しむ料理です。",
+        ingredients: "米、海苔、生魚、酢、砂糖、塩。",
+        steps: [
+          "酢飯を作る。",
+          "海苔の上に酢飯を広げる。",
+          "魚をのせて巻く。",
+          "切ってしょうゆと一緒に提供。"
+        ]
       },
       {
-        country: "Italy",
+        id: "pizza-margherita",
+        country: "イタリア",
         name: "ピザマルゲリータ",
         image: "pizza.jpg",
-        ingredients: "小麦粉、トマト、チーズ、バジル...",
-        steps: "1. 生地を作る。2. ソースをのせる。3. オーブンで焼く。"
+        introduction: "トマト、モッツァレラチーズ、バジルを使ったイタリアの代表的なピザです。",
+        ingredients: "小麦粉、トマトソース、モッツァレラチーズ、バジル、オリーブオイル。",
+        steps: [
+          "生地をこねて発酵させる。",
+          "トマトソースを塗る。",
+          "チーズとバジルをのせる。",
+          "オーブンで焼く。"
+        ]
       }
     ]
   },
+
   my: {
     siteTitle: "ကမ္ဘာ့ဟင်းချက်နည်းများ",
     btnAll: "အားလုံး",
@@ -128,26 +188,47 @@ const texts = {
     btnItaly: "🇮🇹 အီတလီ",
     recipes: [
       {
-        country: "Myanmar",
+        id: "mohinga",
+        country: "မြန်မာ",
         name: "မုန့်ဟင်းခါး",
         image: "mohinga.jpg",
-        ingredients: "ဆန်ခေါက်ဆွဲ၊ ငါးရည်၊ ငှက်ပျောပင်...",
-        steps: "1. ရည်ပြင်ဆင်ပါ။ 2. ခေါက်ဆွဲပြုတ်ပါ။ 3. တွဲပေးပါ။"
+        introduction: "မုန့်ဟင်းခါးဟာ မြန်မာနိုင်ငံရဲ့ အမျိုးသားအစားအစာဖြစ်ပြီး နံနက်စာအနေနဲ့အထူးအချစ်ကြီးခံရတဲ့ ငါးရည်ခေါက်ဆွဲဖြစ်ပါတယ်။",
+        ingredients: "ဆန်ခေါက်ဆွဲ၊ ငါးရည်၊ ငှက်ပျောပင်၊ ချိုင့်၊ ငရုပ်သီးအမှုန့်။",
+        steps: [
+          "ရည်ပြင်ဆင်ပါ။",
+          "ခေါက်ဆွဲပြုတ်ပါ။",
+          "ရည်သွင်းပြီး ငရုပ်သီးအမှုန့်ဖြင့်ပေးပါ။"
+        ]
       },
       {
-        country: "Japan",
+        id: "sushi",
+        country: "ဂျပန်",
         name: "ဆူရှီ",
         image: "sushi.jpg",
-        ingredients: "ဆန်၊ နို့ရီ၊ အသားကောင်း၊ ဗိုင်နီဂါ...",
-        steps: "1. ဆန်ချက်ပါ။ 2. ဗိုင်နီဂါထည့်ပါ။ 3. အသားနှင့်လှုပ်ပါ။"
+        introduction: "ဆူရှီဟာ ဂျပန်အစားအစာတွင် အဓိကအရာဖြစ်ပြီး ဆန်နှင့် အသားကောင်းတို့ကို ပေါင်းစပ်ထားတဲ့ လှပသောအစားအစာဖြစ်ပါတယ်။",
+        ingredients: "ဆန်၊ နို့ရီ၊ အသားကောင်း၊ ဗိုင်နီဂါ။",
+        steps: [
+          "ဆန်ချက်ပါ။",
+          "ဗိုင်နီဂါထည့်ပါ။",
+          "အသားနှင့်လှုပ်ပါ။"
+        ]
       },
       {
-        country: "Italy",
+        id: "pizza-margherita",
+        country: "အီတလီ",
         name: "ပီဇာမာဂေရိတာ",
         image: "pizza.jpg",
-        ingredients: "ပုံပြင်မှုန့်၊ ခရမ်းချဥ်၊ ချိစ်၊ ဘာဆစ်...",
-        steps: "1. ထမင်းပြုလုပ်ပါ။ 2. ဆော့စ်ထည့်ပါ။ 3. မီးဖိုမှာချက်ပါ။"
+        introduction: "ပီဇာမာဂေရိတာဟာ အီတလီရဲ့ အမိုက်စားအစားအစာဖြစ်ပြီး ချိစ်နဲ့ ခရမ်းချဥ်တို့ပေါင်းထားတဲ့ ပေါ့ပါးသည့်အရသာရှိပါတယ်။",
+        ingredients: "ပုံပြင်မှုန့်၊ ခရမ်းချဥ်၊ ချိစ်၊ ဘာဆစ်။",
+        steps: [
+          "ထမင်းပြုလုပ်ပါ။",
+          "ဆော့စ်ထည့်ပါ။",
+          "မီးဖိုမှာချက်ပါ။"
+        ]
       }
     ]
-  }
+  },
+
+  fr: { siteTitle: "Recettes du Monde", recipes: [] },
+  in: { siteTitle: "World Kitchen Recipes - India", recipes: [] }
 };
